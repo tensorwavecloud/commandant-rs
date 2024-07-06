@@ -1,0 +1,5 @@
+cargo:rerun-if-changed=build.rs
+cargo:rustc-cfg=apple
+cargo:rustc-cfg=apple_new
+cargo:rustc-link-lib=dylib=objc
+cargo:cc_args=-fobjc-exceptions -fobjc-arc -fobjc-arc-exceptions

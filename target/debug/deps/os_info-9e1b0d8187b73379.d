@@ -1,0 +1,12 @@
+/Users/kenny/workspaces/commandant-rs/target/debug/deps/libos_info-9e1b0d8187b73379.rmeta: /Users/kenny/.cargo/registry/src/index.crates.io-6f17d22bba15001f/os_info-3.7.0/src/lib.rs /Users/kenny/.cargo/registry/src/index.crates.io-6f17d22bba15001f/os_info-3.7.0/src/macos/mod.rs /Users/kenny/.cargo/registry/src/index.crates.io-6f17d22bba15001f/os_info-3.7.0/src/architecture.rs /Users/kenny/.cargo/registry/src/index.crates.io-6f17d22bba15001f/os_info-3.7.0/src/bitness.rs /Users/kenny/.cargo/registry/src/index.crates.io-6f17d22bba15001f/os_info-3.7.0/src/info.rs /Users/kenny/.cargo/registry/src/index.crates.io-6f17d22bba15001f/os_info-3.7.0/src/matcher.rs /Users/kenny/.cargo/registry/src/index.crates.io-6f17d22bba15001f/os_info-3.7.0/src/os_type.rs /Users/kenny/.cargo/registry/src/index.crates.io-6f17d22bba15001f/os_info-3.7.0/src/version.rs
+
+/Users/kenny/workspaces/commandant-rs/target/debug/deps/os_info-9e1b0d8187b73379.d: /Users/kenny/.cargo/registry/src/index.crates.io-6f17d22bba15001f/os_info-3.7.0/src/lib.rs /Users/kenny/.cargo/registry/src/index.crates.io-6f17d22bba15001f/os_info-3.7.0/src/macos/mod.rs /Users/kenny/.cargo/registry/src/index.crates.io-6f17d22bba15001f/os_info-3.7.0/src/architecture.rs /Users/kenny/.cargo/registry/src/index.crates.io-6f17d22bba15001f/os_info-3.7.0/src/bitness.rs /Users/kenny/.cargo/registry/src/index.crates.io-6f17d22bba15001f/os_info-3.7.0/src/info.rs /Users/kenny/.cargo/registry/src/index.crates.io-6f17d22bba15001f/os_info-3.7.0/src/matcher.rs /Users/kenny/.cargo/registry/src/index.crates.io-6f17d22bba15001f/os_info-3.7.0/src/os_type.rs /Users/kenny/.cargo/registry/src/index.crates.io-6f17d22bba15001f/os_info-3.7.0/src/version.rs
+
+/Users/kenny/.cargo/registry/src/index.crates.io-6f17d22bba15001f/os_info-3.7.0/src/lib.rs:
+/Users/kenny/.cargo/registry/src/index.crates.io-6f17d22bba15001f/os_info-3.7.0/src/macos/mod.rs:
+/Users/kenny/.cargo/registry/src/index.crates.io-6f17d22bba15001f/os_info-3.7.0/src/architecture.rs:
+/Users/kenny/.cargo/registry/src/index.crates.io-6f17d22bba15001f/os_info-3.7.0/src/bitness.rs:
+/Users/kenny/.cargo/registry/src/index.crates.io-6f17d22bba15001f/os_info-3.7.0/src/info.rs:
+/Users/kenny/.cargo/registry/src/index.crates.io-6f17d22bba15001f/os_info-3.7.0/src/matcher.rs:
+/Users/kenny/.cargo/registry/src/index.crates.io-6f17d22bba15001f/os_info-3.7.0/src/os_type.rs:
+/Users/kenny/.cargo/registry/src/index.crates.io-6f17d22bba15001f/os_info-3.7.0/src/version.rs:

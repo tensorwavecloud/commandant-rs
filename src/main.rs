@@ -28,11 +28,11 @@ enum StressNgArch {
     MacOS,
 }
 
-// OneForAll CLI Application
+// commandant-rs CLI Application
 // This struct represents the command-line interface of the application,
 // defining the available subcommands and their respective functionalities.
 #[derive(Parser, Debug)]
-#[clap(author = "Kenny Sheridan", version = "0.1 (Dev)", about = "OneForAll -\
+#[clap(author = "Kenny Sheridan", version = "0.1 (Dev)", about = "commandant-rs -\
  An advanced tool for hardware performance testing and diagnostics.",
 long_about = long_description())]
 struct Cli {
@@ -60,12 +60,12 @@ enum Commands {
     DatabaseOps,
 }
 
-/// # OneForAll
+/// # commandant-rs
 ///
-/// OneForAll is a comprehensive tool designed for in-depth hardware
+/// commandant-rs is a comprehensive tool designed for in-depth hardware
 /// performance analysis and diagnostics. It leverages advanced testing
 /// methodologies to provide users with detailed insights into their
-/// system's capabilities and bottlenecks. With OneForAll, you can run
+/// system's capabilities and bottlenecks. With commandant-rs, you can run
 /// various tests, including benchmarks, stress tests, and hardware
 /// discovery, to understand the full scope of your hardware's performance.
 ///
@@ -86,15 +86,15 @@ enum Commands {
 /// - **Overwatch**: Watch your system's performance in real-time, capturing
 ///   critical metrics and providing live feedback.
 ///
-/// OneForAll is designed with both simplicity and power in mind, making it
+/// commandant-rs is designed with both simplicity and power in mind, making it
 /// suitable for both casual users looking to check their system's performance
 /// and professionals requiring detailed hardware analysis.
 fn long_description() -> &'static str {
-    "\n\n\nOneForAll is a comprehensive tool designed for in-depth hardware \
+    "\n\n\ncommandant-rs is a comprehensive tool designed for in-depth hardware \
     performance analysis and diagnostics. \
     It leverages advanced testing methodologies to provide users with \
     detailed insights into their system's capabilities \
-    and bottlenecks. With OneForAll, you can run various tests, including \
+    and bottlenecks. With commandant-rs, you can run various tests, including \
     benchmarks, stress tests, and hardware discovery, \
     to understand the full scope of your hardware's performance.\n\n\
     The tool is structured into several modules, each targeting a specific \
@@ -112,7 +112,7 @@ fn long_description() -> &'static str {
     - Overwatch: Watch your system's performance in real-time from the web browser, capturing \
     critical metrics and providing live feedback.\n
    
-    OneForAll is designed with both simplicity and power in mind, making it \
+    commandant-rs is designed with both simplicity and power in mind, making it \
     suitable for both casual users looking to \
     check their system's performance and professionals requiring detailed \
     hardware analysis."
@@ -148,7 +148,7 @@ async fn main() -> std::io::Result<()> {
     let db_logger = logger.clone(); // Clone the logger for database handling.
 
     // Attempt to create a new DatabaseAdapter
-    let path_to_db = "OneForAll_database_file.db"; // database path
+    let path_to_db = "commandant-rs_database_file.db"; // database path
     let db_adapter_result = DatabaseAdapter::new(path_to_db, db_logger.clone());
 
     // Handle the Result and create an Arc<dyn DatabasePort> if successful
@@ -204,7 +204,7 @@ async fn main() -> std::io::Result<()> {
     let db_logger = logger.clone(); // Clone the logger for database handling.
 
     // Attempt to create a new DatabaseAdapter
-    let path_to_db = "OneForAll_database_file.db"; // database path
+    let path_to_db = "commandant-rs_database_file.db"; // database path
     let db_adapter_result = DatabaseAdapter::new(path_to_db, db_logger.clone());
 
     let _command_handle = spawn(async move {
@@ -380,7 +380,7 @@ fn get_all_keys(logger: Arc<dyn LoggerPort>) -> Result<(), sled::Error> {
     logger.log_info("Attempting to open the Sled database.");
 
     // Attempt to open the Sled database, gracefully handling errors.
-    let db = match sled::open("OneForAll_database_file.db") {
+    let db = match sled::open("commandant-rs_database_file.db") {
         Ok(db) => {
             // Log the successful opening of the database.
             logger.log_info("Database opened successfully.");
