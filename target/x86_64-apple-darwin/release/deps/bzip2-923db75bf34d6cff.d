@@ -1,0 +1,11 @@
+/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/deps/libbzip2-923db75bf34d6cff.rmeta: /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bzip2-0.4.4/src/lib.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bzip2-0.4.4/src/mem.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bzip2-0.4.4/src/bufread.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bzip2-0.4.4/src/read.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bzip2-0.4.4/src/write.rs
+
+/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/deps/libbzip2-923db75bf34d6cff.rlib: /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bzip2-0.4.4/src/lib.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bzip2-0.4.4/src/mem.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bzip2-0.4.4/src/bufread.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bzip2-0.4.4/src/read.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bzip2-0.4.4/src/write.rs
+
+/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/deps/bzip2-923db75bf34d6cff.d: /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bzip2-0.4.4/src/lib.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bzip2-0.4.4/src/mem.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bzip2-0.4.4/src/bufread.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bzip2-0.4.4/src/read.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bzip2-0.4.4/src/write.rs
+
+/Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bzip2-0.4.4/src/lib.rs:
+/Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bzip2-0.4.4/src/mem.rs:
+/Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bzip2-0.4.4/src/bufread.rs:
+/Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bzip2-0.4.4/src/read.rs:
+/Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bzip2-0.4.4/src/write.rs:

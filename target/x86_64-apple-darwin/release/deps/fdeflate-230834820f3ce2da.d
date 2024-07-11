@@ -1,0 +1,10 @@
+/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/deps/libfdeflate-230834820f3ce2da.rmeta: /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.1/src/lib.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.1/src/compress.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.1/src/decompress.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.1/src/tables.rs
+
+/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/deps/libfdeflate-230834820f3ce2da.rlib: /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.1/src/lib.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.1/src/compress.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.1/src/decompress.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.1/src/tables.rs
+
+/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/deps/fdeflate-230834820f3ce2da.d: /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.1/src/lib.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.1/src/compress.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.1/src/decompress.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.1/src/tables.rs
+
+/Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.1/src/lib.rs:
+/Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.1/src/compress.rs:
+/Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.1/src/decompress.rs:
+/Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fdeflate-0.3.1/src/tables.rs:

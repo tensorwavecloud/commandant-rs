@@ -1,0 +1,77 @@
+cargo:rerun-if-env-changed=BZIP2_NO_PKG_CONFIG
+cargo:rerun-if-env-changed=PKG_CONFIG_ALLOW_CROSS_x86_64-apple-darwin
+cargo:rerun-if-env-changed=PKG_CONFIG_ALLOW_CROSS_x86_64_apple_darwin
+cargo:rerun-if-env-changed=TARGET_PKG_CONFIG_ALLOW_CROSS
+cargo:rerun-if-env-changed=PKG_CONFIG_ALLOW_CROSS
+cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
+cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_apple_darwin
+cargo:rerun-if-env-changed=TARGET_PKG_CONFIG
+cargo:rerun-if-env-changed=PKG_CONFIG
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
+cargo:rerun-if-env-changed=TARGET_PKG_CONFIG_SYSROOT_DIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+TARGET = Some("x86_64-apple-darwin")
+OPT_LEVEL = Some("3")
+HOST = Some("aarch64-apple-darwin")
+cargo:rerun-if-env-changed=CC_x86_64-apple-darwin
+CC_x86_64-apple-darwin = None
+cargo:rerun-if-env-changed=CC_x86_64_apple_darwin
+CC_x86_64_apple_darwin = None
+cargo:rerun-if-env-changed=TARGET_CC
+TARGET_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+RUSTC_LINKER = None
+cargo:rerun-if-env-changed=CROSS_COMPILE
+CROSS_COMPILE = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some("false")
+CARGO_CFG_TARGET_FEATURE = Some("cmpxchg16b,fxsr,sse,sse2,sse3,sse4.1,ssse3")
+cargo:rerun-if-env-changed=CFLAGS_x86_64-apple-darwin
+CFLAGS_x86_64-apple-darwin = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_apple_darwin
+CFLAGS_x86_64_apple_darwin = None
+cargo:rerun-if-env-changed=TARGET_CFLAGS
+TARGET_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "bzip2-1.0.8" "-D_FILE_OFFSET_BITS=64" "-DBZ_NO_STDIO" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/bzip2-sys-359a0dfb76d951b2/out/lib/bzip2-1.0.8/blocksort.o" "-c" "bzip2-1.0.8/blocksort.c"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "bzip2-1.0.8" "-D_FILE_OFFSET_BITS=64" "-DBZ_NO_STDIO" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/bzip2-sys-359a0dfb76d951b2/out/lib/bzip2-1.0.8/huffman.o" "-c" "bzip2-1.0.8/huffman.c"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "bzip2-1.0.8" "-D_FILE_OFFSET_BITS=64" "-DBZ_NO_STDIO" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/bzip2-sys-359a0dfb76d951b2/out/lib/bzip2-1.0.8/crctable.o" "-c" "bzip2-1.0.8/crctable.c"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "bzip2-1.0.8" "-D_FILE_OFFSET_BITS=64" "-DBZ_NO_STDIO" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/bzip2-sys-359a0dfb76d951b2/out/lib/bzip2-1.0.8/randtable.o" "-c" "bzip2-1.0.8/randtable.c"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "bzip2-1.0.8" "-D_FILE_OFFSET_BITS=64" "-DBZ_NO_STDIO" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/bzip2-sys-359a0dfb76d951b2/out/lib/bzip2-1.0.8/compress.o" "-c" "bzip2-1.0.8/compress.c"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "bzip2-1.0.8" "-D_FILE_OFFSET_BITS=64" "-DBZ_NO_STDIO" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/bzip2-sys-359a0dfb76d951b2/out/lib/bzip2-1.0.8/decompress.o" "-c" "bzip2-1.0.8/decompress.c"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "bzip2-1.0.8" "-D_FILE_OFFSET_BITS=64" "-DBZ_NO_STDIO" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/bzip2-sys-359a0dfb76d951b2/out/lib/bzip2-1.0.8/bzlib.o" "-c" "bzip2-1.0.8/bzlib.c"
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+cargo:rerun-if-env-changed=AR_x86_64-apple-darwin
+AR_x86_64-apple-darwin = None
+cargo:rerun-if-env-changed=AR_x86_64_apple_darwin
+AR_x86_64_apple_darwin = None
+cargo:rerun-if-env-changed=TARGET_AR
+TARGET_AR = None
+cargo:rerun-if-env-changed=AR
+AR = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64-apple-darwin
+ARFLAGS_x86_64-apple-darwin = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64_apple_darwin
+ARFLAGS_x86_64_apple_darwin = None
+cargo:rerun-if-env-changed=TARGET_ARFLAGS
+TARGET_ARFLAGS = None
+cargo:rerun-if-env-changed=ARFLAGS
+ARFLAGS = None
+running: ZERO_AR_DATE="1" "ar" "cq" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/bzip2-sys-359a0dfb76d951b2/out/lib/libbz2.a" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/bzip2-sys-359a0dfb76d951b2/out/lib/bzip2-1.0.8/blocksort.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/bzip2-sys-359a0dfb76d951b2/out/lib/bzip2-1.0.8/huffman.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/bzip2-sys-359a0dfb76d951b2/out/lib/bzip2-1.0.8/crctable.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/bzip2-sys-359a0dfb76d951b2/out/lib/bzip2-1.0.8/randtable.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/bzip2-sys-359a0dfb76d951b2/out/lib/bzip2-1.0.8/compress.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/bzip2-sys-359a0dfb76d951b2/out/lib/bzip2-1.0.8/decompress.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/bzip2-sys-359a0dfb76d951b2/out/lib/bzip2-1.0.8/bzlib.o"
+exit status: 0
+running: "ar" "s" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/bzip2-sys-359a0dfb76d951b2/out/lib/libbz2.a"
+exit status: 0
+cargo:rustc-link-lib=static=bz2
+cargo:rustc-link-search=native=/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/bzip2-sys-359a0dfb76d951b2/out/lib
+cargo:root=/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/bzip2-sys-359a0dfb76d951b2/out
+cargo:include=/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/bzip2-sys-359a0dfb76d951b2/out/include

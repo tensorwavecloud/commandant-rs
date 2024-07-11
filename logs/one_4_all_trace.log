@@ -1,0 +1,67 @@
+2024-07-10T19:04:11 [TRACE] - [36mstarting context[0m
+2024-07-10T19:04:11 [TRACE] - [36mstarting pagecache[0m
+2024-07-10T19:04:11 [TRACE] - [36mfile len: 0 segment len 524288 segments: 0[0m
+2024-07-10T19:04:11 [TRACE] - [36mtrying to find the max stable tip for bounding batch manifests with segment iter {} of segments >= first_tip -1[0m
+2024-07-10T19:04:11 [TRACE] - [36mgenerated iterator over segments {} with lsn >= 0[0m
+2024-07-10T19:04:11 [TRACE] - [36mbuilding on top of old snapshot: Snapshot { stable_lsn: None, active_segment: None, pt: [] }[0m
+2024-07-10T19:04:11 [TRACE] - [36mdb is empty, returning default snapshot[0m
+2024-07-10T19:04:11 [TRACE] - [36mgenerated snapshot: Snapshot { stable_lsn: None, active_segment: None, pt: [] }[0m
+2024-07-10T19:04:11 [TRACE] - [36minitialized self.segments to [][0m
+2024-07-10T19:04:11 [TRACE] - [36minitialized self.ordering to {}[0m
+2024-07-10T19:04:11 [TRACE] - [36mevaluating free list {} in SA::next[0m
+2024-07-10T19:04:11 [TRACE] - [36madvancing file tip from 0 to 524288[0m
+2024-07-10T19:04:11 [TRACE] - [36msetting Segment to Active with new lsn 0[0m
+2024-07-10T19:04:11 [TRACE] - [36mgetting page iter for META[0m
+2024-07-10T19:04:11 [TRACE] - [36mallocating pid 0 for the first time[0m
+2024-07-10T19:04:11 [TRACE] - [36mcas_page called on pid 0 to Meta(Meta { inner: {} }) with old ts 0[0m
+2024-07-10T19:04:11 [TRACE] - [36mcas_page on pid 0 has log kind: Replace[0m
+2024-07-10T19:04:11 [TRACE] - [36mreserving buf of len 8[0m
+2024-07-10T19:04:11 [TRACE] - [36mreserved 8 bytes at lsn 20 lid 20[0m
+2024-07-10T19:04:11 [TRACE] - [36mcas_page succeeded on pid 0[0m
+2024-07-10T19:04:11 [TRACE] - [36mmark_link pid 0 at cache info CacheInfo { ts: 1, lsn: 20, pointer: Inline(20), log_size: 8 }[0m
+2024-07-10T19:04:11 [TRACE] - [36mmark_replace pid 0 from cache infos [] to cache info CacheInfo { ts: 1, lsn: 20, pointer: Inline(20), log_size: 8 } with lsn 0[0m
+2024-07-10T19:04:11 [TRACE] - [36maccessed pid 0 -> paging out pids [][0m
+2024-07-10T19:04:11 [TRACE] - [36mgetting page iter for idgen[0m
+2024-07-10T19:04:11 [TRACE] - [36mallocating pid 1 for the first time[0m
+2024-07-10T19:04:11 [TRACE] - [36mcas_page called on pid 1 to Counter(0) with old ts 0[0m
+2024-07-10T19:04:11 [TRACE] - [36mcas_page on pid 1 has log kind: Replace[0m
+2024-07-10T19:04:11 [TRACE] - [36mreserving buf of len 9[0m
+2024-07-10T19:04:11 [TRACE] - [36mreserved 9 bytes at lsn 28 lid 28[0m
+2024-07-10T19:04:11 [TRACE] - [36mcas_page succeeded on pid 1[0m
+2024-07-10T19:04:11 [TRACE] - [36mmark_link pid 1 at cache info CacheInfo { ts: 1, lsn: 28, pointer: Inline(28), log_size: 9 }[0m
+2024-07-10T19:04:11 [TRACE] - [36mmark_replace pid 1 from cache infos [] to cache info CacheInfo { ts: 1, lsn: 28, pointer: Inline(28), log_size: 9 } with lsn 0[0m
+2024-07-10T19:04:11 [TRACE] - [36maccessed pid 1 -> paging out pids [][0m
+2024-07-10T19:04:11 [TRACE] - [36mgetting page iter for idgen[0m
+2024-07-10T19:04:11 [TRACE] - [36mpagecache started[0m
+2024-07-10T19:04:11 [TRACE] - [36mgetting page iter for META[0m
+2024-07-10T19:04:11 [TRACE] - [36mallocating pid 2 for the first time[0m
+2024-07-10T19:04:11 [TRACE] - [36mcas_page called on pid 2 to Node(Node { prefix_len: 0, next: None, merging_child: None, merging: false, lo: [], hi: [], data: Leaf(Leaf { keys: [], values: [] }) }) with old ts 0[0m
+2024-07-10T19:04:11 [TRACE] - [36mcas_page on pid 2 has log kind: Replace[0m
+2024-07-10T19:04:11 [TRACE] - [36mreserving buf of len 16[0m
+2024-07-10T19:04:11 [TRACE] - [36msealing ioubuf from  roll_iobuf[0m
+2024-07-10T19:04:11 [TRACE] - [36mreserved 16 bytes at lsn 37 lid 37[0m
+2024-07-10T19:04:11 [TRACE] - [36mcas_page succeeded on pid 2[0m
+2024-07-10T19:04:11 [TRACE] - [36mmark_link pid 2 at cache info CacheInfo { ts: 1, lsn: 37, pointer: Inline(37), log_size: 16 }[0m
+2024-07-10T19:04:11 [TRACE] - [36mmark_replace pid 2 from cache infos [] to cache info CacheInfo { ts: 1, lsn: 37, pointer: Inline(37), log_size: 16 } with lsn 0[0m
+2024-07-10T19:04:11 [TRACE] - [36maccessed pid 2 -> paging out pids [][0m
+2024-07-10T19:04:11 [TRACE] - [36mallocated pid 2 for leaf in new_tree for namespace [95, 95, 115, 108, 101, 100, 95, 95, 100, 101, 102, 97, 117, 108, 116][0m
+2024-07-10T19:04:11 [TRACE] - [36mallocating pid 3 for the first time[0m
+2024-07-10T19:04:11 [TRACE] - [36mcas_page called on pid 3 to Node(Node { prefix_len: 0, next: None, merging_child: None, merging: false, lo: [], hi: [], data: Index(Index { keys: [[]], pointers: [2] }) }) with old ts 0[0m
+2024-07-10T19:04:11 [TRACE] - [36mcas_page on pid 3 has log kind: Replace[0m
+2024-07-10T19:04:11 [TRACE] - [36mreserving buf of len 18[0m
+2024-07-10T19:04:11 [TRACE] - [36mreserved 18 bytes at lsn 53 lid 53[0m
+2024-07-10T19:04:11 [TRACE] - [36mcas_page succeeded on pid 3[0m
+2024-07-10T19:04:11 [TRACE] - [36mmark_link pid 3 at cache info CacheInfo { ts: 1, lsn: 53, pointer: Inline(53), log_size: 18 }[0m
+2024-07-10T19:04:11 [TRACE] - [36mmark_replace pid 3 from cache infos [] to cache info CacheInfo { ts: 1, lsn: 53, pointer: Inline(53), log_size: 18 } with lsn 0[0m
+2024-07-10T19:04:11 [TRACE] - [36maccessed pid 3 -> paging out pids [][0m
+2024-07-10T19:04:11 [TRACE] - [36mgetting page iter for META[0m
+2024-07-10T19:04:11 [TRACE] - [36mcas_page called on pid 0 to Meta(Meta { inner: {[95, 95, 115, 108, 101, 100, 95, 95, 100, 101, 102, 97, 117, 108, 116]: 3} }) with old ts 1[0m
+2024-07-10T19:04:11 [TRACE] - [36mcas_page on pid 0 has log kind: Replace[0m
+2024-07-10T19:04:11 [TRACE] - [36mreserving buf of len 25[0m
+2024-07-10T19:04:11 [TRACE] - [36mreserved 25 bytes at lsn 71 lid 71[0m
+2024-07-10T19:04:11 [TRACE] - [36mcas_page succeeded on pid 0[0m
+2024-07-10T19:04:11 [TRACE] - [36mmark_link pid 0 at cache info CacheInfo { ts: 2, lsn: 71, pointer: Inline(71), log_size: 25 }[0m
+2024-07-10T19:04:11 [TRACE] - [36mmark_replace pid 0 from cache infos [CacheInfo { ts: 1, lsn: 20, pointer: Inline(20), log_size: 8 }] to cache info CacheInfo { ts: 2, lsn: 71, pointer: Inline(71), log_size: 25 } with lsn 0[0m
+2024-07-10T19:04:11 [TRACE] - [36mremoving pid 0 at lsn 0 from segment Active(Active { lsn: 0, rss: 76, deferred_replaced_rss: 0, deferred_replaced_pids: {}, pids: {0, 1, 2, 3}, latest_replacement_lsn: 0, can_free_upon_deactivation: {}, deferred_rm_blob: {} })[0m
+2024-07-10T19:04:11 [TRACE] - [36maccessed pid 0 -> paging out pids [][0m
+2024-07-10T19:04:11 [TRACE] - [36mgetting page iter for META[0m

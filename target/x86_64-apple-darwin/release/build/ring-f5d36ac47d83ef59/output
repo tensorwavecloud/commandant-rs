@@ -1,0 +1,224 @@
+cargo:rerun-if-env-changed=RING_PREGENERATE_ASM
+cargo:rustc-env=RING_CORE_PREFIX=ring_core_0_17_7_
+OPT_LEVEL = Some("3")
+TARGET = Some("x86_64-apple-darwin")
+HOST = Some("aarch64-apple-darwin")
+cargo:rerun-if-env-changed=CC_x86_64-apple-darwin
+CC_x86_64-apple-darwin = None
+cargo:rerun-if-env-changed=CC_x86_64_apple_darwin
+CC_x86_64_apple_darwin = None
+cargo:rerun-if-env-changed=TARGET_CC
+TARGET_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+RUSTC_LINKER = None
+cargo:rerun-if-env-changed=CROSS_COMPILE
+CROSS_COMPILE = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some("false")
+CARGO_CFG_TARGET_FEATURE = Some("cmpxchg16b,fxsr,sse,sse2,sse3,sse4.1,ssse3")
+cargo:rerun-if-env-changed=CFLAGS_x86_64-apple-darwin
+CFLAGS_x86_64-apple-darwin = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_apple_darwin
+CFLAGS_x86_64_apple_darwin = None
+cargo:rerun-if-env-changed=TARGET_CFLAGS
+TARGET_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/curve25519/curve25519.o" "-c" "crypto/curve25519/curve25519.c"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/fipsmodule/aes/aes_nohw.o" "-c" "crypto/fipsmodule/aes/aes_nohw.c"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/fipsmodule/bn/montgomery.o" "-c" "crypto/fipsmodule/bn/montgomery.c"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/fipsmodule/bn/montgomery_inv.o" "-c" "crypto/fipsmodule/bn/montgomery_inv.c"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/fipsmodule/ec/ecp_nistz.o" "-c" "crypto/fipsmodule/ec/ecp_nistz.c"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/fipsmodule/ec/gfp_p256.o" "-c" "crypto/fipsmodule/ec/gfp_p256.c"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/fipsmodule/ec/gfp_p384.o" "-c" "crypto/fipsmodule/ec/gfp_p384.c"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/fipsmodule/ec/p256.o" "-c" "crypto/fipsmodule/ec/p256.c"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/limbs/limbs.o" "-c" "crypto/limbs/limbs.c"
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/mem.o" "-c" "crypto/mem.c"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/poly1305/poly1305.o" "-c" "crypto/poly1305/poly1305.c"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/crypto.o" "-c" "crypto/crypto.c"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/cpu_intel.o" "-c" "crypto/cpu_intel.c"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/curve25519/curve25519_64_adx.o" "-c" "crypto/curve25519/curve25519_64_adx.c"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/poly1305/poly1305_vec.o" "-c" "crypto/poly1305/poly1305_vec.c"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/third_party/fiat/asm/fiat_curve25519_adx_mul.o" "-c" "third_party/fiat/asm/fiat_curve25519_adx_mul.S"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/third_party/fiat/asm/fiat_curve25519_adx_square.o" "-c" "third_party/fiat/asm/fiat_curve25519_adx_square.S"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/fipsmodule/ec/p256-nistz.o" "-c" "crypto/fipsmodule/ec/p256-nistz.c"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/8bf506bcd6b99535-chacha-x86_64-macosx.o" "-c" "/Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ring-0.17.7/pregenerated/chacha-x86_64-macosx.S"
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/8bf506bcd6b99535-aesni-x86_64-macosx.o" "-c" "/Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ring-0.17.7/pregenerated/aesni-x86_64-macosx.S"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/8bf506bcd6b99535-vpaes-x86_64-macosx.o" "-c" "/Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ring-0.17.7/pregenerated/vpaes-x86_64-macosx.S"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/8bf506bcd6b99535-x86_64-mont-macosx.o" "-c" "/Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ring-0.17.7/pregenerated/x86_64-mont-macosx.S"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/8bf506bcd6b99535-x86_64-mont5-macosx.o" "-c" "/Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ring-0.17.7/pregenerated/x86_64-mont5-macosx.S"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/8bf506bcd6b99535-p256-x86_64-asm-macosx.o" "-c" "/Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ring-0.17.7/pregenerated/p256-x86_64-asm-macosx.S"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/8bf506bcd6b99535-aesni-gcm-x86_64-macosx.o" "-c" "/Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ring-0.17.7/pregenerated/aesni-gcm-x86_64-macosx.S"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/8bf506bcd6b99535-ghash-x86_64-macosx.o" "-c" "/Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ring-0.17.7/pregenerated/ghash-x86_64-macosx.S"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/8bf506bcd6b99535-sha512-x86_64-macosx.o" "-c" "/Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ring-0.17.7/pregenerated/sha512-x86_64-macosx.S"
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/8bf506bcd6b99535-chacha20_poly1305_x86_64-macosx.o" "-c" "/Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ring-0.17.7/pregenerated/chacha20_poly1305_x86_64-macosx.S"
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/8bf506bcd6b99535-sha256-x86_64-macosx.o" "-c" "/Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ring-0.17.7/pregenerated/sha256-x86_64-macosx.S"
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+running: ZERO_AR_DATE="1" "ar" "cq" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/libring_core_0_17_7_.a" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/curve25519/curve25519.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/fipsmodule/aes/aes_nohw.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/fipsmodule/bn/montgomery.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/fipsmodule/bn/montgomery_inv.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/fipsmodule/ec/ecp_nistz.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/fipsmodule/ec/gfp_p256.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/fipsmodule/ec/gfp_p384.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/fipsmodule/ec/p256.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/limbs/limbs.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/mem.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/poly1305/poly1305.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/crypto.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/cpu_intel.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/curve25519/curve25519_64_adx.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/poly1305/poly1305_vec.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/third_party/fiat/asm/fiat_curve25519_adx_mul.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/third_party/fiat/asm/fiat_curve25519_adx_square.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/fipsmodule/ec/p256-nistz.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/8bf506bcd6b99535-chacha-x86_64-macosx.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/8bf506bcd6b99535-aesni-x86_64-macosx.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/8bf506bcd6b99535-vpaes-x86_64-macosx.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/8bf506bcd6b99535-x86_64-mont-macosx.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/8bf506bcd6b99535-x86_64-mont5-macosx.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/8bf506bcd6b99535-p256-x86_64-asm-macosx.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/8bf506bcd6b99535-aesni-gcm-x86_64-macosx.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/8bf506bcd6b99535-ghash-x86_64-macosx.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/8bf506bcd6b99535-sha512-x86_64-macosx.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/8bf506bcd6b99535-chacha20_poly1305_x86_64-macosx.o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/8bf506bcd6b99535-sha256-x86_64-macosx.o"
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/libring_core_0_17_7_.a(gfp_p256.o) has no symbols
+
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/libring_core_0_17_7_.a(p256.o) has no symbols
+
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/libring_core_0_17_7_.a(poly1305.o) has no symbols
+
+exit status: 0
+running: "ar" "s" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/libring_core_0_17_7_.a"
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/libring_core_0_17_7_.a(gfp_p256.o) has no symbols
+
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/libring_core_0_17_7_.a(p256.o) has no symbols
+
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/libring_core_0_17_7_.a(poly1305.o) has no symbols
+
+exit status: 0
+cargo:rustc-link-lib=static=ring_core_0_17_7_
+OPT_LEVEL = Some("3")
+TARGET = Some("x86_64-apple-darwin")
+HOST = Some("aarch64-apple-darwin")
+cargo:rerun-if-env-changed=CC_x86_64-apple-darwin
+CC_x86_64-apple-darwin = None
+cargo:rerun-if-env-changed=CC_x86_64_apple_darwin
+CC_x86_64_apple_darwin = None
+cargo:rerun-if-env-changed=TARGET_CC
+TARGET_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+RUSTC_LINKER = None
+cargo:rerun-if-env-changed=CROSS_COMPILE
+CROSS_COMPILE = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some("false")
+CARGO_CFG_TARGET_FEATURE = Some("cmpxchg16b,fxsr,sse,sse2,sse3,sse4.1,ssse3")
+cargo:rerun-if-env-changed=CFLAGS_x86_64-apple-darwin
+CFLAGS_x86_64-apple-darwin = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_apple_darwin
+CFLAGS_x86_64_apple_darwin = None
+cargo:rerun-if-env-changed=TARGET_CFLAGS
+TARGET_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+running: env -u IPHONEOS_DEPLOYMENT_TARGET "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "include" "-I" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out" "-Wall" "-Wextra" "-fvisibility=hidden" "-std=c1x" "-pedantic" "-Wall" "-Wextra" "-Wbad-function-cast" "-Wcast-align" "-Wcast-qual" "-Wconversion" "-Wenum-compare" "-Wfloat-equal" "-Wformat=2" "-Winline" "-Winvalid-pch" "-Wmissing-field-initializers" "-Wmissing-include-dirs" "-Wnested-externs" "-Wredundant-decls" "-Wshadow" "-Wsign-compare" "-Wsign-conversion" "-Wstrict-prototypes" "-Wundef" "-Wuninitialized" "-Wwrite-strings" "-gfull" "-DNDEBUG" "-o" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/constant_time_test.o" "-c" "crypto/constant_time_test.c"
+exit status: 0
+running: ZERO_AR_DATE="1" "ar" "cq" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/libring_core_0_17_7_test.a" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/crypto/constant_time_test.o"
+exit status: 0
+running: "ar" "s" "/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out/libring_core_0_17_7_test.a"
+exit status: 0
+cargo:rustc-link-lib=static=ring_core_0_17_7_test
+cargo:rustc-link-search=native=/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/build/ring-f5d36ac47d83ef59/out
+cargo:rerun-if-changed=crypto/perlasm/x86_64-xlate.pl
+cargo:rerun-if-changed=crypto/perlasm/x86gas.pl
+cargo:rerun-if-changed=crypto/perlasm/x86nasm.pl
+cargo:rerun-if-changed=crypto/perlasm/arm-xlate.pl
+cargo:rerun-if-changed=crypto/perlasm/x86asm.pl
+cargo:rerun-if-changed=crypto/internal.h
+cargo:rerun-if-changed=crypto/cpu_intel.c
+cargo:rerun-if-changed=crypto/chacha/asm/chacha-x86.pl
+cargo:rerun-if-changed=crypto/chacha/asm/chacha-armv8.pl
+cargo:rerun-if-changed=crypto/chacha/asm/chacha-x86_64.pl
+cargo:rerun-if-changed=crypto/chacha/asm/chacha-armv4.pl
+cargo:rerun-if-changed=crypto/mem.c
+cargo:rerun-if-changed=crypto/fipsmodule/modes/asm/ghashv8-armx.pl
+cargo:rerun-if-changed=crypto/fipsmodule/modes/asm/ghash-x86.pl
+cargo:rerun-if-changed=crypto/fipsmodule/modes/asm/aesni-gcm-x86_64.pl
+cargo:rerun-if-changed=crypto/fipsmodule/modes/asm/ghash-x86_64.pl
+cargo:rerun-if-changed=crypto/fipsmodule/modes/asm/ghash-armv4.pl
+cargo:rerun-if-changed=crypto/fipsmodule/ec/ecp_nistz.c
+cargo:rerun-if-changed=crypto/fipsmodule/ec/p256-nistz.h
+cargo:rerun-if-changed=crypto/fipsmodule/ec/asm/p256-x86_64-asm.pl
+cargo:rerun-if-changed=crypto/fipsmodule/ec/asm/p256-armv8-asm.pl
+cargo:rerun-if-changed=crypto/fipsmodule/ec/ecp_nistz384.inl
+cargo:rerun-if-changed=crypto/fipsmodule/ec/gfp_p256.c
+cargo:rerun-if-changed=crypto/fipsmodule/ec/p256-nistz.c
+cargo:rerun-if-changed=crypto/fipsmodule/ec/p256_shared.h
+cargo:rerun-if-changed=crypto/fipsmodule/ec/ecp_nistz.h
+cargo:rerun-if-changed=crypto/fipsmodule/ec/p256-nistz-table.h
+cargo:rerun-if-changed=crypto/fipsmodule/ec/util.h
+cargo:rerun-if-changed=crypto/fipsmodule/ec/gfp_p384.c
+cargo:rerun-if-changed=crypto/fipsmodule/ec/ecp_nistz384.h
+cargo:rerun-if-changed=crypto/fipsmodule/ec/p256.c
+cargo:rerun-if-changed=crypto/fipsmodule/ec/p256_table.h
+cargo:rerun-if-changed=crypto/fipsmodule/bn/internal.h
+cargo:rerun-if-changed=crypto/fipsmodule/bn/asm/armv8-mont.pl
+cargo:rerun-if-changed=crypto/fipsmodule/bn/asm/x86-mont.pl
+cargo:rerun-if-changed=crypto/fipsmodule/bn/asm/x86_64-mont.pl
+cargo:rerun-if-changed=crypto/fipsmodule/bn/asm/x86_64-mont5.pl
+cargo:rerun-if-changed=crypto/fipsmodule/bn/asm/armv4-mont.pl
+cargo:rerun-if-changed=crypto/fipsmodule/bn/montgomery.c
+cargo:rerun-if-changed=crypto/fipsmodule/bn/montgomery_inv.c
+cargo:rerun-if-changed=crypto/fipsmodule/sha/asm/sha512-armv8.pl
+cargo:rerun-if-changed=crypto/fipsmodule/sha/asm/sha512-x86_64.pl
+cargo:rerun-if-changed=crypto/fipsmodule/sha/asm/sha256-armv4.pl
+cargo:rerun-if-changed=crypto/fipsmodule/sha/asm/sha512-armv4.pl
+cargo:rerun-if-changed=crypto/fipsmodule/aes/asm/vpaes-x86_64.pl
+cargo:rerun-if-changed=crypto/fipsmodule/aes/asm/vpaes-x86.pl
+cargo:rerun-if-changed=crypto/fipsmodule/aes/asm/bsaes-armv7.pl
+cargo:rerun-if-changed=crypto/fipsmodule/aes/asm/aesv8-armx.pl
+cargo:rerun-if-changed=crypto/fipsmodule/aes/asm/aesni-x86_64.pl
+cargo:rerun-if-changed=crypto/fipsmodule/aes/asm/aesni-x86.pl
+cargo:rerun-if-changed=crypto/fipsmodule/aes/aes_nohw.c
+cargo:rerun-if-changed=crypto/constant_time_test.c
+cargo:rerun-if-changed=crypto/cipher_extra/asm/chacha20_poly1305_armv8.pl
+cargo:rerun-if-changed=crypto/cipher_extra/asm/chacha20_poly1305_x86_64.pl
+cargo:rerun-if-changed=crypto/poly1305/internal.h
+cargo:rerun-if-changed=crypto/poly1305/poly1305_vec.c
+cargo:rerun-if-changed=crypto/poly1305/poly1305_arm.c
+cargo:rerun-if-changed=crypto/poly1305/poly1305_arm_asm.S
+cargo:rerun-if-changed=crypto/poly1305/poly1305.c
+cargo:rerun-if-changed=crypto/limbs/limbs.inl
+cargo:rerun-if-changed=crypto/limbs/limbs.c
+cargo:rerun-if-changed=crypto/limbs/limbs.h
+cargo:rerun-if-changed=crypto/curve25519/internal.h
+cargo:rerun-if-changed=crypto/curve25519/asm/x25519-asm-arm.S
+cargo:rerun-if-changed=crypto/curve25519/curve25519_64_adx.c
+cargo:rerun-if-changed=crypto/curve25519/curve25519.c
+cargo:rerun-if-changed=crypto/curve25519/curve25519_tables.h
+cargo:rerun-if-changed=crypto/crypto.c
+cargo:rerun-if-changed=include/ring-core/asm_base.h
+cargo:rerun-if-changed=include/ring-core/arm_arch.h
+cargo:rerun-if-changed=include/ring-core/poly1305.h
+cargo:rerun-if-changed=include/ring-core/type_check.h
+cargo:rerun-if-changed=include/ring-core/aes.h
+cargo:rerun-if-changed=include/ring-core/check.h
+cargo:rerun-if-changed=include/ring-core/target.h
+cargo:rerun-if-changed=include/ring-core/mem.h
+cargo:rerun-if-changed=include/ring-core/base.h
+cargo:rerun-if-changed=third_party/fiat/asm/fiat_curve25519_adx_mul.S
+cargo:rerun-if-changed=third_party/fiat/asm/fiat_curve25519_adx_square.S
+cargo:rerun-if-changed=third_party/fiat/LICENSE
+cargo:rerun-if-changed=third_party/fiat/curve25519_64.h
+cargo:rerun-if-changed=third_party/fiat/p256_64.h
+cargo:rerun-if-changed=third_party/fiat/curve25519_64_adx.h
+cargo:rerun-if-changed=third_party/fiat/curve25519_64_msvc.h
+cargo:rerun-if-changed=third_party/fiat/p256_64_msvc.h
+cargo:rerun-if-changed=third_party/fiat/p256_32.h
+cargo:rerun-if-changed=third_party/fiat/curve25519_32.h

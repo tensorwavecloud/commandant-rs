@@ -1,0 +1,10 @@
+/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/deps/libsha1-59145fc7d5fc188f.rmeta: /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha1-0.10.6/src/lib.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha1-0.10.6/src/compress.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha1-0.10.6/src/compress/soft.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha1-0.10.6/src/compress/x86.rs
+
+/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/deps/libsha1-59145fc7d5fc188f.rlib: /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha1-0.10.6/src/lib.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha1-0.10.6/src/compress.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha1-0.10.6/src/compress/soft.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha1-0.10.6/src/compress/x86.rs
+
+/Users/kennethsheridan/commandant-rs/target/x86_64-apple-darwin/release/deps/sha1-59145fc7d5fc188f.d: /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha1-0.10.6/src/lib.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha1-0.10.6/src/compress.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha1-0.10.6/src/compress/soft.rs /Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha1-0.10.6/src/compress/x86.rs
+
+/Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha1-0.10.6/src/lib.rs:
+/Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha1-0.10.6/src/compress.rs:
+/Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha1-0.10.6/src/compress/soft.rs:
+/Users/kennethsheridan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha1-0.10.6/src/compress/x86.rs:

@@ -1,0 +1,1 @@
+{"rustc":458667574049689136,"features":"","declared_features":"","target":0,"profile":0,"path":0,"deps":[[9966486492886573255,"build_script_build",false,16880745266629997298]],"local":[{"RerunIfChanged":{"output":"x86_64-apple-darwin/release/build/wasm-bindgen-36234b015d36dce4/output","paths":["build.rs"]}}],"rustflags":[],"metadata":0,"config":0,"compile_kind":0}

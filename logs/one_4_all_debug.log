@@ -1,0 +1,13 @@
+2024-07-10T19:04:11 [DEBUG] - [34mno previous snapshot found[0m
+2024-07-10T19:04:11 [DEBUG] - [34mordering before clearing tears: {}, max_header_stable_lsn: 0[0m
+2024-07-10T19:04:11 [DEBUG] - [34min clean_tail_tears, found missing item in tail: None and we'll scan segments {} above lowest lsn 0[0m
+2024-07-10T19:04:11 [DEBUG] - [34munable to load new segment: Io(Custom { kind: Other, error: "no segments remaining to iterate over" })[0m
+2024-07-10T19:04:11 [DEBUG] - [34mfiltering out segments after detected tear at (lsn, lid) -1[0m
+2024-07-10T19:04:11 [DEBUG] - [34munable to load new segment: Io(Custom { kind: Other, error: "no segments remaining to iterate over" })[0m
+2024-07-10T19:04:11 [DEBUG] - [34mSA starting with tip 0 stable -1 free {}[0m
+2024-07-10T19:04:11 [DEBUG] - [34mstarting log for a totally fresh system[0m
+2024-07-10T19:04:11 [DEBUG] - [34msegment accountant returning offset: 0 for lsn 0 on deck: {}[0m
+2024-07-10T19:04:11 [DEBUG] - [34mstarting IoBufs with next_lsn: 0 next_lid: 0[0m
+2024-07-10T19:04:11 [DEBUG] - [34mstoring lsn 0 in beginning of buffer[0m
+2024-07-10T19:04:11 [DEBUG] - [34mload_snapshot loading pages from 0..0[0m
+2024-07-10T19:04:11 [DEBUG] - [34mallocated pid 3 for root of new_tree [95, 95, 115, 108, 101, 100, 95, 95, 100, 101, 102, 97, 117, 108, 116][0m
